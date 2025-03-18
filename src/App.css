@@ -1,0 +1,69 @@
+/* Ensure the html and body take up the full browser height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center content in the body using Flexbox */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* A subtle background color */
+  background-color: #f0f0f0;
+}
+
+/* Weather app container styling */
+.weather-app {
+  max-width: 400px;
+  width: 100%; /* Make it responsive on smaller screens */
+  padding: 20px;
+  text-align: center;
+  background: #fff; /* A solid white card background */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+  display: flex;           /* Put input and button on the same row */
+  justify-content: center; /* Center them horizontally */
+  align-items: center;
+  gap: 10px;               /* Space between input and button */
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"] {
+  flex: 1;                 /* Grow to fill available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Search button styling */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error text styling */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Weather info container */
+.weather-info {
+  margin-top: 20px;
+}
